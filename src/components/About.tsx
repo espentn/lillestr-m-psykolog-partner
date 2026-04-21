@@ -5,21 +5,40 @@ const About = () => {
         <div>
           <span className="text-xs uppercase tracking-[0.2em] text-sage">Om meg</span>
           <h2 className="font-serif text-4xl md:text-5xl text-sage-deep mt-3 mb-6">
-            En psykolog du kan slappe av hos.
+            Lillestrømpsykologen
           </h2>
           <div className="space-y-4 text-foreground/80 leading-relaxed">
             <p>
-              Jeg er spesialist i klinisk voksenpsykologi med over 15 års erfaring
-              fra spesialisthelsetjenesten og privat praksis i Lillestrøm-området.
+              Jeg er psykologspesialist med privatpraksis som tilbyr samtaleterapi på dagtid, sentralt i Lillestrøm eller online. 
+              Gjennom Lillestrømpsykologen tilbyr jeg psykologtjenester i form av psykologisk behandling og veiledning til voksne. 
+              Jeg har mange års erfaring innen det offentlige helsevesenet med arbeid i poliklinikk, døgnavdeling, akutteam og ambulantteam.  
             </p>
             <p>
-              Mitt utgangspunkt er at endring krever trygghet. Hos meg skal du få
-              tid, varme og faglig dybde – uansett om du sliter med vonde minner,
-              depresjon, eller utfordringer i parforholdet.
+              Jeg har erfaring med et bredt spekter av psykiske vansker og livsutfordringer, men har arbeidet særlig mye med problemstillinger som depresjon, 
+              angst, traumer (PTSD) og livskriser og utbrenthet. Jeg benytter meg av dokumentert effektive behandlingsmetoder. 
+              Jeg arbeider mye med korttidsdynamisk psykoterapi (ISTDP) hvor fokus rettes mot å hjelpe deg å få bedre tilgang til dine konfliktfylte 
+              følelser ved å arbeide med unngåelse av følelser som skaper symptomer, problemer og vansker med å fungere i hverdagen. 
+              Jeg arbeider også med elementer av emosjonsfokusert psykoterapi og med sensorimotoriske teknikker. 
+              Jeg arbeider også mye med traumebehandling ved bruk av EMDR hvor fokus rettes mot å minske følelsesmessig ubehag relatert 
+              til ubehagelige opplevelser i fortiden. Jeg har en dynamisk forståelsesramme og integrerer ulike teorier og metoder. 
+              Det er min jobb som psykolog å tilpasse terapien til den enkelte klient.
             </p>
             <p>
-              Jeg er medlem av Norsk Psykologforening og sertifisert EMDR-terapeut
-              gjennom EMDR Norge.
+              Utdanning
+
+                Profesjonsstudiet for psykologi, ved Universitetet i Bergen. Autorisert psykolog og helsepersonell.
+
+                Spesialisering i klinisk voksenpsykologi ved Institutt for Aktiv Psykoterapi.
+
+                Godkjent psykologspesialist av Norsk Psykologforening.
+
+                EMDR Trinn 1 og 2
+
+                Sensorimotorisk Psykoterapi nivå 1
+
+                Tryggere Traumeterapeut
+
+                Intensive Short-Term Psychotherapy (ISTDP)  videreutdanning 3,5 år
             </p>
           </div>
 
