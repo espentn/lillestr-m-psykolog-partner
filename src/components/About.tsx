@@ -75,6 +75,6 @@ import theaImage from "@/assets/thea.png";
       </div>
     </section>
   );
-};
+
 
 export default About;
