@@ -1,8 +1,14 @@
 const items = [
-  { name: "Individualterapi", duration: "50 min", price: "1 450 kr" },
-  { name: "Parterapi", duration: "75 min", price: "2 100 kr" },
-  { name: "EMDR-time", duration: "75 min", price: "2 100 kr" },
-  { name: "Førstegangssamtale", duration: "60 min", price: "1 450 kr" },
+  { name: "Individualterapi 45 min", duration: "Dagtid (oppstart senest kl 14.00)", price: "1 650 kr" },
+  { name: "Individualterapi 45 min", duration: "Ettermiddag/kveldstid fom kl 15.00", price: "1 750 kr" },
+  { name: "Individualterapi 60 min", duration: "Dagtid (oppstart senest kl 14.00)", price: "1 950 kr" },
+  { name: "Individualterapi 60 min", duration: "Ettermiddag/kveldstid fom kl 15.00", price: "2 050 kr" },
+  { name: "Individualterapi 75 min", duration: "Dagtid", price: "2 390 kr" },
+  { name: "Individualterapi 75 min", duration: "Ettermiddag/kveldstid fom kl 15.00", price: "2 490 kr" },
+  { name: "Individualterapi 90 min", duration: "Dagtid", price: "2 890 kr" },
+  { name: "Individualterapi 90 min", duration: "Ettermiddag/kveldstid fom kl 15.00", price: "2 990 kr" },
+  { name: "Uttalelse/erklæring", duration: "Inntil 45 min tidsbruk", price: "1 490 kr" },
+  { name: "Veiledning av annet helsepersonell", duration: "Ta direkte kontakt for pris", price: "Kontakt" },
 ];
 
 const Pricing = () => {
@@ -32,7 +38,7 @@ const Pricing = () => {
         </ul>
 
         <p className="text-sm text-foreground/60 text-center mt-8">
-          Avbestilling senest 24 timer før timen, ellers belastes full pris.
+          Avbestilling senest 48 timer før timen på virkedag, ellers belastes full pris.
         </p>
       </div>
     </section>

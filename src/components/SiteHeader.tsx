@@ -27,7 +27,7 @@ const SiteHeader = () => {
             href="tel:+4790123456"
             className="inline-flex items-center gap-2 rounded-sm bg-sage-deep px-5 py-2.5 text-sm text-primary-foreground hover:bg-sage transition-colors"
           >
-            <Phone className="h-4 w-4" /> 901 23 456
+            <Phone className="h-4 w-4" /> 462 86 444
           </a>
         </nav>
         <button
@@ -47,10 +47,10 @@ const SiteHeader = () => {
               </a>
             ))}
             <a
-              href="tel:+4790123456"
+              href="tel:+4746286444"
               className="inline-flex items-center gap-2 rounded-sm bg-sage-deep px-5 py-3 text-sm text-primary-foreground w-fit"
             >
-              <Phone className="h-4 w-4" /> Ring 901 23 456
+              <Phone className="h-4 w-4" /> Ring 462 86 444
             </a>
           </div>
         </nav>

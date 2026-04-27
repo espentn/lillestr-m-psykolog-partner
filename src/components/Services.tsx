@@ -4,17 +4,17 @@ const services = [
   {
     icon: Brain,
     title: "Traumebehandling",
-    desc: "Hjelp til å bearbeide vanskelige opplevelser, PTSD og kroppslige reaksjoner i et trygt tempo.",
+    desc: "Hjelp til å bearbeide vanskelige opplevelser, PTSD og kroppslige reaksjoner i et trygt tempo. Inkluderer EMDR og sensorimotorisk psykoterapi.",
   },
   {
     icon: Sparkles,
     title: "EMDR-terapi",
-    desc: "Anerkjent og dokumentert metode for traumer, angst og fastlåste minner. Sertifisert EMDR-terapeut.",
+    desc: "Anerkjent og dokumentert metode for traumer, angst og fastlåste minner. Sertifisert EMDR-terapeut (trinn 1 og 2).",
   },
   {
     icon: HeartHandshake,
-    title: "Parterapi",
-    desc: "Bedre kommunikasjon, gjenoppbygge tillit og finne tilbake til hverandre – også etter brudd og kriser.",
+    title: "Korttidsdynamisk psykoterapi (ISTDP)",
+    desc: "Fokus på å hjelpe deg å få bedre tilgang til konfliktfylte følelser ved å arbeide med unngåelse av følelser.",
   },
   {
     icon: CloudRain,
@@ -23,8 +23,8 @@ const services = [
   },
   {
     icon: Stethoscope,
-    title: "Klinisk voksenpsykologi",
-    desc: "Bred utredning og behandling for voksne. Spesialistgodkjent og medlem av Norsk Psykologforening.",
+    title: "Livskriser & utbrenthet",
+    desc: "Støtte ved samlivsbrudd, tap av nære, jobbelastninger og andre belastninger i livet.",
   },
 ];
 

@@ -14,12 +14,16 @@ const faqs = [
     a: "EMDR (Eye Movement Desensitization and Reprocessing) er en anerkjent metode for behandling av traumer, PTSD, angst og fastlåste minner. Metoden er anbefalt av WHO og brukes av meg som sertifisert EMDR-terapeut.",
   },
   {
-    q: "Hvordan foregår parterapi?",
-    a: "Vi starter ofte med en felles samtale, etterfulgt av en individuell samtale med hver av dere. Deretter jobber vi sammen mot konkrete mål – kommunikasjon, tillit, nærhet eller avklaring.",
+    q: "Hva koster en time?",
+    a: "Prisen varierer fra kr 1650 til kr 2990 avhengig av timetype og tidspunkt (dagtid eller ettermiddag/kveldstid). Alle konsultasjoner kan gjennomføres via sikker videoløsning om ønskelig.",
+  },
+  {
+    q: "Kan jeg få time på kveldstid?",
+    a: "Ja, Lillestrømpsykologen tilbyr timer både på dagtid og kveldstid.",
   },
   {
     q: "Hvor ligger kontoret?",
-    a: "Kontoret ligger i Storgata 12 i Lillestrøm sentrum, 5 minutters gange fra Lillestrøm stasjon. God parkering i nærheten.",
+    a: "Kontoret ligger i Storgata 14A i Lillestrøm sentrum (i 4. etg. i NeuroClinic Norway, samme bygg som Olivia Restaurant), 5 minutters gange fra Lillestrøm stasjon. God parkering i Byhaven P-hus, Voldgata 7-9 i nærheten.",
   },
   {
     q: "Har du taushetsplikt?",

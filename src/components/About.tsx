@@ -5,8 +5,9 @@ const About = () => {
         <div>
           <span className="text-xs uppercase tracking-[0.2em] text-sage">Om meg</span>
           <h2 className="font-serif text-4xl md:text-5xl text-sage-deep mt-3 mb-6">
-            Lillestrømpsykologen
+            Thea Hasle Arnesen
           </h2>
+          <p className="text-xs uppercase tracking-widest text-sage mb-4">Spesialist i klinisk voksenpsykologi</p>
           <div className="space-y-4 text-foreground/80 leading-relaxed">
             <p>
               Jeg er psykologspesialist med privatpraksis som tilbyr samtaleterapi på dagtid, sentralt i Lillestrøm eller online. 

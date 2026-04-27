@@ -10,8 +10,11 @@ const Contact = () => {
             Ta kontakt – det er enklere enn du tror.
           </h2>
           <p className="text-cream/75 leading-relaxed mb-10 max-w-md">
-            Ring, send e-post eller stikk innom. Jeg svarer alle henvendelser innen
-            samme arbeidsdag.
+            Lillestrømpsykologen holder til i lokalene til "NeuroClinic Norway" i samme bygg som Olivia Restaurant i 
+            gågaten i Lillestrøm, i 4.etg. Inngang til høyre for Olivia Restaurant, 
+            ved Dr. Dropin skilt. Kontoret er lett tilgjengelig via offentlig kommunikasjon, og er lokalisert 
+            ca 5 min fra Lillestrøm togstasjon. Parkering lett tilgjengelig i Byhaven P-hus, Voldgata 7-9 som ligger 
+            i nærheten av kontoret.
           </p>
 
           <ul className="space-y-5">
@@ -19,8 +22,8 @@ const Contact = () => {
               <Phone className="h-5 w-5 text-terracotta mt-1 shrink-0" strokeWidth={1.5} />
               <div>
                 <p className="text-xs uppercase tracking-widest text-cream/60 mb-1">Telefon</p>
-                <a href="tel:+4790123456" className="text-lg hover:text-terracotta transition-colors">
-                  901 23 456
+                <a href="tel:+4746286444" className="text-lg hover:text-terracotta transition-colors">
+                  462 86 444
                 </a>
               </div>
             </li>
@@ -28,8 +31,8 @@ const Contact = () => {
               <Mail className="h-5 w-5 text-terracotta mt-1 shrink-0" strokeWidth={1.5} />
               <div>
                 <p className="text-xs uppercase tracking-widest text-cream/60 mb-1">E-post</p>
-                <a href="mailto:post@lillestrompsykologen.no" className="text-lg hover:text-terracotta transition-colors">
-                  post@lillestrompsykologen.no
+                <a href="mailto:thea@lillestrompsykologen.no" className="text-lg hover:text-terracotta transition-colors">
+                  thea@lillestrompsykologen.no
                 </a>
               </div>
             </li>
@@ -37,7 +40,7 @@ const Contact = () => {
               <MapPin className="h-5 w-5 text-terracotta mt-1 shrink-0" strokeWidth={1.5} />
               <div>
                 <p className="text-xs uppercase tracking-widest text-cream/60 mb-1">Adresse</p>
-                <p className="text-lg">Storgata 12, 2000 Lillestrøm</p>
+                <p className="text-lg">Storgata 14A, 2000 Lillestrøm</p>
                 <p className="text-sm text-cream/60 mt-1">5 min gange fra Lillestrøm stasjon</p>
               </div>
             </li>
@@ -64,7 +67,7 @@ const Contact = () => {
             ))}
           </ul>
           <a
-            href="tel:+4790123456"
+            href="tel:+4746286444"
             className="inline-flex w-full items-center justify-center gap-2 rounded-sm bg-terracotta px-6 py-4 text-sm font-medium text-cream hover:bg-terracotta/90 transition-colors"
           >
             <Phone className="h-4 w-4" /> Ring for ledig time
