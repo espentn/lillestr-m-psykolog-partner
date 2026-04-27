@@ -30,6 +30,7 @@ export default {
           soft: "hsl(var(--sage-soft))",
         },
         terracotta: "hsl(var(--terracotta))",
+        lilac: "hsl(var(--lilac))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
