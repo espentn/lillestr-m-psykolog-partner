@@ -1,4 +1,4 @@
-const About = () => {
+import theaImage from "@/assets/thea.png";
   return (
     <section id="om" className="py-24 md:py-32 bg-gradient-warm">
       <div className="container grid md:grid-cols-2 gap-16 items-center">
@@ -61,9 +61,9 @@ const About = () => {
 
         <div className="relative">
           <div className="aspect-[4/5] bg-lilac/30 rounded-sm overflow-hidden shadow-soft">
-            {<img src="/thea.png" alt="Thea Hasle Arnesen" className="h-full w-full object-cover" /> }
+            {<img src={theaImage} alt="Thea Hasle Arnesen" className="h-full w-full object-cover" /> }
             <div className="h-full w-full flex items-center justify-center text-sage-deep/40 font-serif text-xl">
-              Portrettbilde
+              
             </div>
           </div>
           <div className="absolute -bottom-6 -left-6 bg-cream p-6 shadow-card max-w-[220px] hidden md:block">
