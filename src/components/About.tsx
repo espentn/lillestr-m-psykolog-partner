@@ -1,4 +1,6 @@
 import theaImage from "@/assets/thea.png";
+
+const About = () => {
   return (
     <section id="om" className="py-24 md:py-32 bg-gradient-warm">
       <div className="container grid md:grid-cols-2 gap-16 items-center">
