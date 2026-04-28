@@ -18,13 +18,14 @@ const Hero = () => {
       <div className="relative container py-28 md:py-40">
         <div className="max-w-2xl">
           <span className="inline-block text-xs uppercase tracking-[0.2em] text-cream/90 mb-6">
-            Psykolog i Lillestrøm
+            Psykolog i Lillestrøm, Akershus & Romerike
           </span>
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-cream leading-[1.05] mb-6">
-            Et trygt sted å bearbeide det vanskelige.
+            Psykologhjelp når du trenger det – i Lillestrøm eller online
           </h1>
           <p className="text-lg md:text-xl text-cream/85 font-light leading-relaxed mb-10 max-w-xl">
-            Spesialist i klinisk voksenpsykologi. Varm, faglig og erfaren psykologhjelp i Lillestrøm eller online, dagtid og kveldstid.
+            Spesialist i klinisk voksenpsykologi med EMDR-sertifisering. Hjelp ved traumer, depresjon, angst og livskriser. 
+            Bestill time i dag – kort ventetid på ca 1 uke.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a

@@ -2,20 +2,24 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqs = [
   {
+    q: "Tilbyr du online terapi?",
+    a: "Ja, alle konsultasjoner kan gjennomføres via sikker videoløsning. Dette er praktisk for deg som bor i Akershus, Romerike eller Oslo-området og foretrekker å møte meg hjemmefra.",
+  },
+  {
     q: "Trenger jeg henvisning fra fastlegen?",
     a: "Nei. Som privatpraktiserende psykolog kan du ta direkte kontakt uten henvisning. Det er heller ingen ventelister via spesialisthelsetjenesten å forholde seg til.",
   },
   {
     q: "Hvor lang er ventetiden?",
-    a: "Vanligvis får du første time innen 1–2 uker. Ring eller send e-post for ledige tider.",
+    a: "Vanligvis får du første time innen 1–2 uker. Bestill time online eller send e-post for ledige tider.",
   },
   {
     q: "Hva er EMDR, og hvem passer det for?",
-    a: "EMDR (Eye Movement Desensitization and Reprocessing) er en anerkjent metode for behandling av traumer, PTSD, angst og fastlåste minner. Metoden er anbefalt av WHO og brukes av meg som sertifisert EMDR-terapeut.",
+    a: "EMDR (Eye Movement Desensitization and Reprocessing) er en anerkjent metode for behandling av traumer, PTSD, angst og fastlåste minner. Metoden er anbefalt av WHO og brukes av meg som sertifisert EMDR-terapeut (trinn 1 og 2).",
   },
   {
-    q: "Hva koster en time?",
-    a: "Prisen varierer fra kr 1650 til kr 2990 avhengig av timetype og tidspunkt (dagtid eller ettermiddag/kveldstid). Alle konsultasjoner kan gjennomføres via sikker videoløsning om ønskelig.",
+    q: "Hva koster en time hos psykolog i Lillestrøm?",
+    a: "Prisen varierer fra kr 1650 til kr 2990 avhengig av timetype og tidspunkt (dagtid eller ettermiddag/kveldstid).",
   },
   {
     q: "Kan jeg få time på kveldstid?",

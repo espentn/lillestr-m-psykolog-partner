@@ -1,30 +1,30 @@
-import { Brain, HeartHandshake, Sparkles, CloudRain, Stethoscope } from "lucide-react";
+import { Brain, HeartHandshake, Sparkles, CloudRain, Stethoscope, Monitor } from "lucide-react";
 
 const services = [
   {
     icon: Brain,
-    title: "Traumebehandling",
-    desc: "Hjelp til å bearbeide vanskelige opplevelser, PTSD og kroppslige reaksjoner i et trygt tempo. Inkluderer EMDR og sensorimotorisk psykoterapi.",
-  },
-  {
-    icon: Sparkles,
-    title: "EMDR-terapi",
-    desc: "Anerkjent og dokumentert metode for traumer, angst og fastlåste minner. Sertifisert EMDR-terapeut (trinn 1 og 2).",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Korttidsdynamisk psykoterapi (ISTDP)",
-    desc: "Fokus på å hjelpe deg å få bedre tilgang til konfliktfylte følelser ved å arbeide med unngåelse av følelser.",
+    title: "Traumer & PTSD",
+    desc: "Sertifisert EMDR-terapi og traumebehandling for å bearbeide vanskelige opplevelser, PTSD og kroppslige reaksjoner. Hjelp til å minske følelsesmessig ubehag fra fortiden.",
   },
   {
     icon: CloudRain,
-    title: "Depresjon & angst",
-    desc: "Forstå hva som holder deg fast og finn tilbake til energi, mening og hverdagsmestring.",
+    title: "Depresjon & Angst",
+    desc: "Forstå hva som holder deg fast og finn tilbake til energi, mening og hverdagsmestring. Dokumenterte metoder for behandling av depresjon og angst.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Korttidsdynamisk terapi (ISTDP)",
+    desc: "Fokus på å hjelpe deg å få bedre tilgang til konfliktfylte følelser ved å arbeide med unngåelse av følelser som skaper symptomer og vansker i hverdagen.",
   },
   {
     icon: Stethoscope,
-    title: "Livskriser & utbrenthet",
-    desc: "Støtte ved samlivsbrudd, tap av nære, jobbelastninger og andre belastninger i livet.",
+    title: "Livskriser & Utbrenthet",
+    desc: "Støtte ved samlivsbrudd, tap av nære, jobbelastninger og andre belastninger i livet. Hjelp til å komme seg gjennom tunge perioder.",
+  },
+  {
+    icon: Monitor,
+    title: "Online terapi",
+    desc: "Alle konsultasjoner kan gjennomføres via sikker videoløsning. Fleksible timer på dagtid og kveldstid for deg som ikke kan møte fysisk.",
   },
 ];
 
@@ -35,11 +35,11 @@ const Services = () => {
         <div className="max-w-2xl mb-16">
           <span className="text-xs uppercase tracking-[0.2em] text-sage">Tjenester</span>
           <h2 className="font-serif text-4xl md:text-5xl text-sage-deep mt-3 mb-5">
-            Spesialisert psykologhjelp i Lillestrøm
+            Psykologhjelp i Lillestrøm – traumer, EMDR, depresjon og angst
           </h2>
           <p className="text-foreground/75 leading-relaxed">
-            Jeg tilbyr individualterapi og parterapi for voksne. Behandlingen tilpasses
-            deg – og baserer seg på dokumenterte metoder.
+            Jeg tilbyr individualterapi for voksne med dokumenterte metoder. Enten du sliter med traumer, trenger EMDR-terapi, 
+            eller har behov for hjelp med depresjon eller angst – jeg tilpasser behandlingen til deg.
           </p>
         </div>
 
