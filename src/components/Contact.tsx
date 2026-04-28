@@ -80,7 +80,6 @@ const Contact = () => {
             <Calendar className="h-4 w-4" /> Bestill time
           </a>
         </div>
-        </div>
       </div>
     </section>
   );
