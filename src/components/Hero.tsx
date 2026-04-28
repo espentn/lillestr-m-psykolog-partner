@@ -1,5 +1,5 @@
 import heroImage from "@/assets/hero-office.jpg";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Calendar } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -27,6 +27,14 @@ const Hero = () => {
             Spesialist i klinisk voksenpsykologi. Varm, faglig og erfaren psykologhjelp i Lillestrøm eller online, dagtid og kveldstid.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://booking.konfidens.no/c/5b8c1c86-c3f5-4836-a701-aa35ca4d6053"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-sm bg-terracotta px-7 py-4 text-sm font-medium text-cream hover:bg-terracotta/90 transition-colors shadow-soft"
+            >
+              <Calendar className="h-4 w-4" /> Bestill time
+            </a>
             <a
               href="tel:+4746286444"
               className="inline-flex items-center justify-center gap-2 rounded-sm bg-cream px-7 py-4 text-sm font-medium text-sage-deep hover:bg-cream/90 transition-colors shadow-soft"

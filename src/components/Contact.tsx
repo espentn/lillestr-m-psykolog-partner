@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Calendar } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -67,8 +67,16 @@ const Contact = () => {
             ))}
           </ul>
           <a
-            href="tel:+4746286444"
+            href="https://booking.konfidens.no/c/5b8c1c86-c3f5-4836-a701-aa35ca4d6053"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex w-full items-center justify-center gap-2 rounded-sm bg-terracotta px-6 py-4 text-sm font-medium text-cream hover:bg-terracotta/90 transition-colors"
+          >
+            <Calendar className="h-4 w-4" /> Bestill time
+          </a>
+          <a
+            href="tel:+4746286444"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-sm border border-cream/30 px-6 py-4 text-sm font-medium text-cream hover:bg-cream/10 transition-colors mt-3"
           >
             <Phone className="h-4 w-4" /> Ring for ledig time
           </a>
