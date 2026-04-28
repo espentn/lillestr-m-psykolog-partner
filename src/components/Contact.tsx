@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Calendar } from "lucide-react";
+import { Mail, MapPin, Clock, Calendar } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -19,11 +19,16 @@ const Contact = () => {
 
           <ul className="space-y-5">
             <li className="flex items-start gap-4">
-              <Phone className="h-5 w-5 text-terracotta mt-1 shrink-0" strokeWidth={1.5} />
+              <Calendar className="h-5 w-5 text-terracotta mt-1 shrink-0" strokeWidth={1.5} />
               <div>
-                <p className="text-xs uppercase tracking-widest text-cream/60 mb-1">Telefon</p>
-                <a href="tel:+4746286444" className="text-lg hover:text-terracotta transition-colors">
-                  462 86 444
+                <p className="text-xs uppercase tracking-widest text-cream/60 mb-1">Bestill time</p>
+                <a 
+                  href="https://booking.konfidens.no/c/5b8c1c86-c3f5-4836-a701-aa35ca4d6053"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-terracotta text-cream px-5 py-2.5 rounded-md hover:bg-terracotta/90 transition-colors font-medium"
+                >
+                  Bestill time online
                 </a>
               </div>
             </li>
@@ -74,12 +79,7 @@ const Contact = () => {
           >
             <Calendar className="h-4 w-4" /> Bestill time
           </a>
-          <a
-            href="tel:+4746286444"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-sm border border-cream/30 px-6 py-4 text-sm font-medium text-cream hover:bg-cream/10 transition-colors mt-3"
-          >
-            <Phone className="h-4 w-4" /> Ring for ledig time
-          </a>
+        </div>
         </div>
       </div>
     </section>

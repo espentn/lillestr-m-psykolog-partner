@@ -1,5 +1,5 @@
 import heroImage from "@/assets/hero-office.jpg";
-import { Phone, MapPin, Calendar } from "lucide-react";
+import { MapPin, Calendar } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -34,12 +34,6 @@ const Hero = () => {
               className="inline-flex items-center justify-center gap-2 rounded-sm bg-terracotta px-7 py-4 text-sm font-medium text-cream hover:bg-terracotta/90 transition-colors shadow-soft"
             >
               <Calendar className="h-4 w-4" /> Bestill time
-            </a>
-            <a
-              href="tel:+4746286444"
-              className="inline-flex items-center justify-center gap-2 rounded-sm bg-cream px-7 py-4 text-sm font-medium text-sage-deep hover:bg-cream/90 transition-colors shadow-soft"
-            >
-              <Phone className="h-4 w-4" /> Ring 462 86 444
             </a>
             <a
               href="#kontakt"

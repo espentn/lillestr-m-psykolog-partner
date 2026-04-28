@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Calendar } from "lucide-react";
 
 const links = [
   { href: "#tjenester", label: "Tjenester" },
@@ -24,10 +24,12 @@ const SiteHeader = () => {
             </a>
           ))}
           <a
-            href="tel:+4790123456"
-            className="inline-flex items-center gap-2 rounded-sm bg-sage-deep px-5 py-2.5 text-sm text-primary-foreground hover:bg-sage transition-colors"
+            href="https://booking.konfidens.no/c/5b8c1c86-c3f5-4836-a701-aa35ca4d6053"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-sm bg-terracotta px-5 py-2.5 text-sm text-cream hover:bg-terracotta/90 transition-colors"
           >
-            <Phone className="h-4 w-4" /> 462 86 444
+            <Calendar className="h-4 w-4" /> Bestill time
           </a>
         </nav>
         <button
@@ -47,10 +49,12 @@ const SiteHeader = () => {
               </a>
             ))}
             <a
-              href="tel:+4746286444"
-              className="inline-flex items-center gap-2 rounded-sm bg-sage-deep px-5 py-3 text-sm text-primary-foreground w-fit"
+              href="https://booking.konfidens.no/c/5b8c1c86-c3f5-4836-a701-aa35ca4d6053"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-sm bg-terracotta px-5 py-3 text-sm text-cream w-fit"
             >
-              <Phone className="h-4 w-4" /> Ring 462 86 444
+              <Calendar className="h-4 w-4" /> Bestill time
             </a>
           </div>
         </nav>
