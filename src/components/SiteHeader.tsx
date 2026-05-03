@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, Calendar } from "lucide-react";
 
 const links = [
@@ -14,9 +15,9 @@ const SiteHeader = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between py-4">
-        <a href="#top" className="flex items-baseline gap-2">
+        <Link to="/" className="flex items-baseline gap-2">
           <span className="font-serif text-2xl text-sage-deep tracking-tight">Lillestrømpsykologen</span>
-        </a>
+        </Link>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <a key={l.href} href={l.href} className="text-sm text-foreground/75 hover:text-sage-deep transition-colors">

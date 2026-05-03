@@ -57,6 +57,24 @@
                   Psykolog i Lillestrøm, Storgata 14A, 2000 Lillestrøm, Norge
                 </p>
             </div>
+
+            {/* KORT OM PSYKOLOGISK BEHANDLING */}
+            <section className="mt-16 border-t border-cream/20 pt-12">
+              <h2 className="text-2xl md:text-3xl font-serif text-cream mb-4">
+                Hva er psykologisk behandling?
+              </h2>
+              <p className="text-cream/85 text-lg leading-relaxed mb-6 max-w-2xl">
+                Vi kan alle oppleve psykiske plager i utfordrende perioder. Psykologisk behandling 
+                i en trygg relasjon kan hjelpe deg forstå dine følelser, tanker og atferd – og finne 
+                gode måter å håndtere dem på.
+              </p>
+              <Link
+                to="/psykolog-lillestrom"
+                className="inline-flex items-center gap-2 text-cream underline hover:text-cream/80 transition-colors"
+              >
+                Les mer om psykologisk behandling <ArrowRight className="h-4 w-4" />
+              </Link>
+            </section>
           </div>
         </div>
       </section>
