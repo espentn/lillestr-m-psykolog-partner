@@ -1,5 +1,6 @@
   import heroImage from "@/assets/hero-office.jpg";
-  import { MapPin, Calendar } from "lucide-react";
+  import { MapPin, Calendar, ArrowRight } from "lucide-react";
+  import { Link } from "react-router-dom";
 
   const Hero = () => {
     return (
@@ -40,6 +41,12 @@
               >
                 <Calendar className="h-4 w-4" /> Bestill time
               </a>
+              <Link
+                to="/psykolog-lillestrom"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border border-cream/40 px-7 py-4 text-sm text-cream hover:bg-cream/10 transition-colors"
+              >
+                Les mer <ArrowRight className="h-4 w-4" />
+              </Link>
               <a
                 href="#kontakt"
                 className="inline-flex items-center justify-center gap-2 rounded-sm border border-cream/40 px-7 py-4 text-sm text-cream hover:bg-cream/10 transition-colors"
