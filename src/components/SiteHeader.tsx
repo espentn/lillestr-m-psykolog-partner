@@ -30,7 +30,7 @@ const SiteHeader = () => {
   const [lidelsesOpenMobile, setLidelsesOpenMobile] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-header-background/85 backdrop-blur-md border-b border-border">
+    <header className="sticky top-0 z-50 bg-[hsl(var(--header-background))]/85 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2">
           <img src={logoImage} alt="Lillestrømpsykologen" className="h-18 w-auto" />
