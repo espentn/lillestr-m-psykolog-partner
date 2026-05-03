@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Calendar } from "lucide-react";
+import { Menu, X, Calendar, ChevronDown } from "lucide-react";
 
 const links = [
   { href: "#tjenester", label: "Tjenester" },
@@ -10,8 +10,24 @@ const links = [
   { href: "#kontakt", label: "Kontakt" },
 ];
 
+const conditions = [
+  { path: "/angst", label: "Angst" },
+  { path: "/depresjon", label: "Depresjon" },
+  { path: "/spiseforstyrrelser", label: "Spiseforstyrrelser" },
+  { path: "/traumer", label: "Traumer" },
+  { path: "/tvangslidelser", label: "Tvangslidelser" },
+  { path: "/livskriser", label: "Livskriser" },
+  { path: "/utbrenthet", label: "Utbrenthet" },
+  { path: "/stress", label: "Stress" },
+  { path: "/relasjonelle-vansker", label: "Relasjonelle vansker" },
+  { path: "/lav-selvfølelse", label: "Lav selvfølelse" },
+];
+
 const SiteHeader = () => {
   const [open, setOpen] = useState(false);
+  const [lidelsesOpen, setLidelsesOpen] = useState(false);
+  const [lidelsesOpenMobile, setLidelsesOpenMobile] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between py-4">
@@ -24,6 +40,26 @@ const SiteHeader = () => {
               {l.label}
             </a>
           ))}
+          
+          {/* Dropdown menu for Lidelser */}
+          <div className="relative group">
+            <button className="text-sm text-foreground/75 hover:text-sage-deep transition-colors inline-flex items-center gap-1">
+              Lidelser
+              <ChevronDown className="h-4 w-4" />
+            </button>
+            <div className="absolute left-0 mt-0 w-48 bg-background border border-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 rounded-sm shadow-lg">
+              {conditions.map((c) => (
+                <Link
+                  key={c.path}
+                  to={c.path}
+                  className="block px-4 py-2 text-sm text-foreground/75 hover:text-sage-deep hover:bg-sage-soft/20 first:rounded-t-sm last:rounded-b-sm transition-colors"
+                >
+                  {c.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <a
             href="https://booking.konfidens.no/c/5b8c1c86-c3f5-4836-a701-aa35ca4d6053"
             target="_blank"
@@ -49,6 +85,35 @@ const SiteHeader = () => {
                 {l.label}
               </a>
             ))}
+            
+            {/* Mobile dropdown for Lidelser */}
+            <div>
+              <button 
+                onClick={() => setLidelsesOpenMobile(!lidelsesOpenMobile)}
+                className="text-foreground/80 inline-flex items-center gap-1 w-full justify-between"
+              >
+                Lidelser
+                <ChevronDown className={`h-4 w-4 transition-transform ${lidelsesOpenMobile ? "rotate-180" : ""}`} />
+              </button>
+              {lidelsesOpenMobile && (
+                <div className="pl-4 mt-2 space-y-2 border-l border-border">
+                  {conditions.map((c) => (
+                    <Link
+                      key={c.path}
+                      to={c.path}
+                      onClick={() => {
+                        setOpen(false);
+                        setLidelsesOpenMobile(false);
+                      }}
+                      className="block text-foreground/70 text-sm"
+                    >
+                      {c.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <a
               href="https://booking.konfidens.no/c/5b8c1c86-c3f5-4836-a701-aa35ca4d6053"
               target="_blank"
