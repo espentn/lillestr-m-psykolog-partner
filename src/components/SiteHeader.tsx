@@ -31,8 +31,22 @@ const SiteHeader = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between py-4">
-        <Link to="/" className="flex items-baseline gap-2">
-          <span className="font-serif text-2xl text-sage-deep tracking-tight">Lillestrømpsykologen</span>
+        <Link to="/" className="flex items-center gap-2">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            className="text-navy"
+            fill="currentColor"
+          >
+            {/* Simple mind/wellness logo */}
+            <circle cx="20" cy="12" r="4" />
+            <path d="M20 16c-4 0-7 2-8 5v7c0 2 1 3 2 3h12c1 0 2-1 2-3v-7c-1-3-4-5-8-5z" />
+            <circle cx="15" cy="20" r="1.5" fill="white" />
+            <circle cx="25" cy="20" r="1.5" fill="white" />
+            <path d="M16 23c1 1 2 1 4 1s3 0 4-1" strokeWidth="1.5" stroke="white" fill="none" strokeLinecap="round" />
+          </svg>
+          <span className="font-serif text-sm font-semibold text-navy hidden sm:inline">LP</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (

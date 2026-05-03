@@ -31,6 +31,7 @@ export default {
         },
         terracotta: "hsl(var(--terracotta))",
         lilac: "hsl(var(--lilac))",
+        navy: "hsl(var(--navy))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
