@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Lillestrømpsykologen - calm, professional palette matching website */
-    --background: 40 20% 97%;
+    --background: 229 47% 12%;
     --foreground: 160 30% 20%;
 
     --cream: 40 25% 95%;

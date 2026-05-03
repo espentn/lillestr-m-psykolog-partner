@@ -33,7 +33,7 @@ const SiteHeader = () => {
     <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoImage} alt="Lillestrømpsykologen" className="h-12 w-auto" />
+          <img src={logoImage} alt="Lillestrømpsykologen" className="h-18 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
