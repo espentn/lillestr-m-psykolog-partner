@@ -44,7 +44,7 @@ const SiteHeader = () => {
           
           {/* Dropdown menu for Lidelser */}
           <div className="relative group">
-            <button className="text-sm text-foreground hover:text-sage-deep hover transition-colors inline-flex items-center gap-1">
+            <button className="text-sm text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--header-text))] hover transition-colors inline-flex items-center gap-1">
               Lidelser
               <ChevronDown className="h-4 w-4" />
             </button>
