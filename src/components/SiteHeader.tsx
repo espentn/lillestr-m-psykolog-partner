@@ -30,21 +30,21 @@ const SiteHeader = () => {
   const [lidelsesOpenMobile, setLidelsesOpenMobile] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[hsl(var(--header-background))]/85 backdrop-blur-md border-b border-border">
+    <header className="sticky top-0 z-50 bg-[hsl(var(--header-background))]/90 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-2">
           <img src={logoImage} alt="Lillestrømpsykologen" className="h-18 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm text-foreground/75 hover:text-sage-deep transition-colors">
+            <a key={l.href} href={l.href} className="text-sm text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--header-text))] transition-colors">
               {l.label}
             </a>
           ))}
           
           {/* Dropdown menu for Lidelser */}
           <div className="relative group">
-            <button className="text-sm text-foreground/75 hover:text-sage-deep transition-colors inline-flex items-center gap-1">
+            <button className="text-sm text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--header-text))] transition-colors inline-flex items-center gap-1">
               Lidelser
               <ChevronDown className="h-4 w-4" />
             </button>
@@ -53,7 +53,7 @@ const SiteHeader = () => {
                 <Link
                   key={c.path}
                   to={c.path}
-                  className="block px-4 py-2 text-sm text-foreground/75 hover:text-sage-deep hover:bg-sage-soft/20 first:rounded-t-sm last:rounded-b-sm transition-colors"
+                  className="block px-4 py-2 text-sm text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--header-text))] hover:bg-sage-soft/20 first:rounded-t-sm last:rounded-b-sm transition-colors"
                 >
                   {c.label}
                 </Link>
@@ -82,7 +82,7 @@ const SiteHeader = () => {
         <nav className="md:hidden border-t border-border bg-background">
           <div className="container py-4 flex flex-col gap-4">
             {links.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-foreground/80">
+              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-[hsl(var(--header-text-muted))]">
                 {l.label}
               </a>
             ))}
@@ -91,7 +91,7 @@ const SiteHeader = () => {
             <div>
               <button 
                 onClick={() => setLidelsesOpenMobile(!lidelsesOpenMobile)}
-                className="text-foreground/80 inline-flex items-center gap-1 w-full justify-between"
+                className="text-[hsl(var(--header-text-muted))] inline-flex items-center gap-1 w-full justify-between"
               >
                 Lidelser
                 <ChevronDown className={`h-4 w-4 transition-transform ${lidelsesOpenMobile ? "rotate-180" : ""}`} />
@@ -106,7 +106,7 @@ const SiteHeader = () => {
                         setOpen(false);
                         setLidelsesOpenMobile(false);
                       }}
-                      className="block text-foreground/70 text-sm"
+                      className="block text-[hsl(var(--header-text-muted))] text-sm"
                     >
                       {c.label}
                     </Link>
