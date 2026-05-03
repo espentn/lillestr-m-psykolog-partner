@@ -8,104 +8,84 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Lillestrømpsykologen - calm, professional palette matching website */
-    --background: 40 20% 97%;
-    --foreground: 160 30% 20%;
+  /* =========================
+     RAW COLOR PALETTE
+  ========================== */
 
-    --cream: 40 25% 95%;
-    --sage: 160 20% 40%;
-    --sage-deep: 160 25% 25%;
-    --sage-soft: 160 15% 90%;
-    --terracotta: 15 70% 55%;
-    --lilac: 270 40% 75%;
-    --navy: 229 47% 12%;
+  --bg: 40 20% 97%;
+  --surface: 40 20% 98%;
+  --text: 160 30% 20%;
 
-    --card: 40 20% 98%;
-    --card-foreground: 160 30% 20%;
+  --primary: 160 25% 25%;     /* deep sage */
+  --primary-soft: 160 15% 90%;
 
-    --popover: 40 20% 98%;
-    --popover-foreground: 160 30% 20%;
+  --accent: 15 70% 55%;       /* terracotta */
+  --accent-soft: 15 60% 92%;
 
-    --primary: 160 25% 25%;
-    --primary-foreground: 40 25% 95%;
+  --muted: 40 15% 92%;
+  --muted-text: 160 20% 35%;
 
-    --secondary: 160 15% 90%;
-    --secondary-foreground: 160 25% 25%;
+  --border: 40 15% 88%;
 
-    --muted: 40 15% 92%;
-    --muted-foreground: 160 20% 35%;
+  /* =========================
+     BRAND (optional emphasis)
+  ========================== */
 
-    --accent: 15 70% 55%;
-    --accent-foreground: 40 25% 95%;
+  --navy: 229 47% 12%;
+  --sage: 160 20% 40%;
+  --sage-deep: 160 25% 25%;
 
-    --destructive: 0 60% 50%;
-    --destructive-foreground: 40 25% 95%;
+  /* =========================
+     SEMANTIC TOKENS (UI LAYER)
+  ========================== */
 
-    --border: 40 15% 88%;
-    --input: 40 15% 88%;
-    --ring: 160 25% 25%;
+  --background: var(--bg);
+  --foreground: var(--text);
 
-    --radius: 0.25rem;
+  --card: var(--surface);
+  --card-foreground: var(--text);
 
-    --shadow-soft: 0 10px 40px -12px hsl(160 25% 25% / 0.15);
-    --shadow-card: 0 2px 20px -8px hsl(160 25% 25% / 0.1);
-    --gradient-warm: linear-gradient(180deg, hsl(40 25% 95%) 0%, hsl(160 15% 92%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(160 25% 25% / 0.85) 0%, hsl(160 30% 20% / 0.7) 100%);
+  --popover: var(--surface);
+  --popover-foreground: var(--text);
 
-    --sidebar-background: 0 0% 98%;
+  --primary-ui: var(--primary);
+  --primary-foreground: var(--bg);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+  --secondary: var(--primary-soft);
+  --secondary-foreground: var(--primary);
 
-    --sidebar-primary: 240 5.9% 10%;
+  --accent-ui: var(--accent);
+  --accent-foreground: var(--bg);
 
-    --sidebar-primary-foreground: 0 0% 98%;
+  --muted-ui: var(--muted);
+  --muted-foreground: var(--muted-text);
 
-    --sidebar-accent: 240 4.8% 95.9%;
+  --border-ui: var(--border);
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+  --ring: var(--primary);
 
-    --sidebar-border: 220 13% 91%;
+  /* =========================
+     EFFECTS
+  ========================== */
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+  --radius: 0.5rem;
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+  --shadow-soft: 0 10px 40px -12px hsl(var(--primary) / 0.15);
+  --shadow-card: 0 2px 20px -8px hsl(var(--primary) / 0.10);
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+  --gradient-hero:
+    linear-gradient(
+      135deg,
+      hsl(var(--primary) / 0.85) 0%,
+      hsl(var(--navy) / 0.75) 100%
+    );
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+  --gradient-warm:
+    linear-gradient(
+      180deg,
+      hsl(var(--bg)) 0%,
+      hsl(var(--primary-soft)) 100%
+    );
 }
 
 @layer base {
