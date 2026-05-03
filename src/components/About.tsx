@@ -63,7 +63,7 @@ const About = () => {
 
         <div className="relative">
           <div className="aspect-[4/5] bg-lilac/30 rounded-sm overflow-hidden shadow-soft">
-            {<img src={theaImage} alt="Thea Hasle Arnesen" className="h-full w-full object-cover" /> }
+            {<img src={theaImage} alt="Thea Hasle Arnesen" className="h-150 w-auto object-cover" /> }
             <div className="h-full w-full flex items-center justify-center text-sage-deep/40 font-serif text-xl">
               
             </div>
