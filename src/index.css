@@ -10,7 +10,12 @@ All colors MUST be HSL.
   :root {
     /* Lillestrømpsykologen - calm, professional palette matching website */
     --background: 40 20% 97%;
-    --header-background: 229 47% 12%;
+    --header-background: 228 50% 12%;
+    --header-text: 40 20% 97%;
+    --header-text-muted: 40 15% 85%;
+    --header-text-subtle: 40 10% 70%;
+    --header-hover: 160 25% 85%;
+    
     --foreground: 160 30% 20%;
 
     --cream: 40 25% 95%;
