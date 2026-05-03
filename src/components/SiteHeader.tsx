@@ -44,7 +44,7 @@ const SiteHeader = () => {
           
           {/* Dropdown menu for Lidelser */}
           <div className="relative group">
-            <button className="text-sm text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--header-text))] transition-colors inline-flex items-center gap-1">
+            <button className="text-sm text-foreground hover:text-sage-deep hover transition-colors inline-flex items-center gap-1">
               Lidelser
               <ChevronDown className="h-4 w-4" />
             </button>
@@ -53,7 +53,7 @@ const SiteHeader = () => {
                 <Link
                   key={c.path}
                   to={c.path}
-                  className="block px-4 py-2 text-sm text-[hsl(var(--header-text-muted))] hover:text-[hsl(var(--header-text))] hover:bg-sage-soft/20 first:rounded-t-sm last:rounded-b-sm transition-colors"
+                  className="block px-4 py-2 text-sm text-foreground hover:text-sage-deep hover hover:bg-sage-soft/20 first:rounded-t-sm last:rounded-b-sm transition-colors"
                 >
                   {c.label}
                 </Link>
